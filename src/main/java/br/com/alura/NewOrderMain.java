@@ -12,8 +12,17 @@ public class NewOrderMain {
     public static void main(String[] args) {
         var producer = new KafkaProducer<String, String>(properties());
         var value = "132123,67523,7894589745";
-        var record = new ProducerRecord<>("ECOMMERCE_NEW_ORDER", value, value);
-        producer.send(record);
+        var record = new ProducerRecord<>("ECOMMERCE_NEW_ORDER", value, value)
+        Callback callback = (data, ex) -> {
+            if (ex != null){
+                ex.printStackTrace();
+                return;
+            }
+        }
+        var email = "Thank you for your order! We are processing your order!"
+        var emailRecord = new ProducerRecord<>("ECOMMERCE_SEND_EMAIL", email. email)
+        producer.send(emailRecord, callback.get());
+        producer.send(record, callback.get());
     }
 
     private static Properties properties() {
