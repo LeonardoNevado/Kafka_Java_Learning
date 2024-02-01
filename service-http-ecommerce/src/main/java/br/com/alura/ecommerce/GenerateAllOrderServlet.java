@@ -29,6 +29,7 @@ public class GenerateAllOrderServlet extends HttpServlet {
 
             batchDispatcher.send("SEND_MESSAGE_TO_ALL_USERS", "USER_FENERATE_READING_REPORT", "USER_FENERATE_READING_REPORT");
 
+            User[] users;
             for (User user : users){
                 batchDispatcher.send("USER_GENERATE_READING_REPORTS", user.getUuid(), user);
             }
