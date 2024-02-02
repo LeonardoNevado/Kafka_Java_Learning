@@ -6,18 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="service-fraud-detector" />
-        <module name="servicelog" />
-        <module name="servicehttpecommerce" />
         <module name="commonkafka" />
-        <module name="common-kafka" />
-        <module name="service-log" />
-        <module name="serviceneworder" />
-        <module name="serviceemail" />
-        <module name="servicefrauddetector" />
-        <module name="serviceusers" />
-        <module name="service-new-order" />
         <module name="service-email" />
+        <module name="service-log" />
+        <module name="service-new-order" />
+        <module name="servicelog" />
+        <module name="servicefrauddetector" />
+        <module name="serviceneworder" />
+        <module name="servicehttpecommerce" />
+        <module name="common-kafka" />
+        <module name="service-reading-report" />
+        <module name="serviceusers" />
+        <module name="serviceemail" />
+        <module name="service-users" />
+        <module name="service-http-ecommerce" />
+        <module name="service-fraud-detector" />
+        <module name="servicereadingreport" />
+        <module name="serviceemailneworder" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

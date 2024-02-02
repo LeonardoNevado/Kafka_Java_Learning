@@ -8,7 +8,6 @@
     <artifactId>ecommerce</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    
     <build>
         <plugins>
             <plugin>
@@ -21,7 +20,6 @@
             </plugin>
         </plugins>
     </build>
-
     <modules>
         <module>service-email</module>
         <module>service-fraud-detector</module>
@@ -30,6 +28,8 @@
         <module>common-kafka</module>
         <module>service-users</module>
         <module>service-http-ecommerce</module>
+        <module>service-reading-report</module>
+        <module>service-email-new-order</module>
     </modules>
 
     <dependencies>
